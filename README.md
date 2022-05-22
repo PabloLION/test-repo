@@ -2,18 +2,20 @@
 
 repo for making tests
 
-## Test
+## Problem description
+
+### Test
 
 ```bash
 yarn install && yarn lint
 ```
 
-## Problem
+### Problem
 
 1. In the first commit on this branch, the `yarn lint` command works correctly.
 2. In the second commit, the `yarn lint` command fails.
 
-## Reproduction
+### Reproduction
 
 1. Run `yarn init` to create a whatever new repo.
 2. Install packages with `yarn` following [Getting Started - Linting your TypeScript Codebase](https://typescript-eslint.io/docs/linting/)
@@ -48,7 +50,11 @@ yarn install && yarn lint
    "plugin:@typescript-eslint/strict"
    ```
 
-## Env
+5. I also tested with `.eslintrc.js` and `.eslintrc.cjs`. Both failed with same error.
+
+### Env
+
+I'm using MacBook Pro (2021, 16'), which has M1 chips.
 
 VSCode
 
